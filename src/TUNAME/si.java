@@ -1,5 +1,5 @@
-
 import java.awt.Color;
+import java.io.IOException;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -127,6 +127,11 @@ public class si extends javax.swing.JFrame {
         btnContrato.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/contract.png"))); // NOI18N
         btnContrato.setText(" Contrato de compra");
         btnContrato.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnContrato.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnContratoMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion.add(btnContrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 280, 60));
 
         btnFactura.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -134,6 +139,11 @@ public class si extends javax.swing.JFrame {
         btnFactura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/bill.png"))); // NOI18N
         btnFactura.setText(" Factura original");
         btnFactura.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnFactura.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnFacturaMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion.add(btnFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 200, 60));
 
         btnTenencia.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -141,6 +151,11 @@ public class si extends javax.swing.JFrame {
         btnTenencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/document.png"))); // NOI18N
         btnTenencia.setText(" Comprobante de tenencia");
         btnTenencia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTenencia.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTenenciaMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion.add(btnTenencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 280, 60));
 
         btnMantenimiento.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -148,6 +163,11 @@ public class si extends javax.swing.JFrame {
         btnMantenimiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/predictive.png"))); // NOI18N
         btnMantenimiento.setText(" Registro de mantenimiento");
         btnMantenimiento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMantenimiento.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnMantenimientoMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion.add(btnMantenimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 330, 60));
 
         btnTarjeta.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -155,6 +175,11 @@ public class si extends javax.swing.JFrame {
         btnTarjeta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/credit-card.png"))); // NOI18N
         btnTarjeta.setText(" Tarjeta de circulacion");
         btnTarjeta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTarjeta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTarjetaMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion.add(btnTarjeta, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 280, 60));
 
         btnID.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -162,6 +187,11 @@ public class si extends javax.swing.JFrame {
         btnID.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/card.png"))); // NOI18N
         btnID.setText(" Identificacion del ultimo dueño");
         btnID.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnID.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnIDMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion.add(btnID, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 330, 60));
 
         JAgragar_Documentacion.getContentPane().add(Agregar_Documentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 560));
@@ -195,6 +225,11 @@ public class si extends javax.swing.JFrame {
         btnContrato_C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/contract.png"))); // NOI18N
         btnContrato_C.setText(" Contrato de compra");
         btnContrato_C.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnContrato_C.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnContrato_CMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion1.add(btnContrato_C, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 280, 60));
 
         btnFactura_C.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -202,6 +237,11 @@ public class si extends javax.swing.JFrame {
         btnFactura_C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/bill.png"))); // NOI18N
         btnFactura_C.setText(" Factura original");
         btnFactura_C.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnFactura_C.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnFactura_CMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion1.add(btnFactura_C, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 200, 60));
 
         btnTenencia_C.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -209,6 +249,11 @@ public class si extends javax.swing.JFrame {
         btnTenencia_C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/document.png"))); // NOI18N
         btnTenencia_C.setText(" Comprobante de tenencia");
         btnTenencia_C.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTenencia_C.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTenencia_CMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion1.add(btnTenencia_C, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 280, 60));
 
         btnRegistro_C.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -216,6 +261,11 @@ public class si extends javax.swing.JFrame {
         btnRegistro_C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/predictive.png"))); // NOI18N
         btnRegistro_C.setText(" Registro de mantenimiento");
         btnRegistro_C.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRegistro_C.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnRegistro_CMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion1.add(btnRegistro_C, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 330, 60));
 
         btnCirculacion_C.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -223,6 +273,11 @@ public class si extends javax.swing.JFrame {
         btnCirculacion_C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/credit-card.png"))); // NOI18N
         btnCirculacion_C.setText(" Tarjeta de circulacion");
         btnCirculacion_C.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCirculacion_C.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCirculacion_CMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion1.add(btnCirculacion_C, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 280, 60));
 
         btnIdentificacion_C.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -230,6 +285,11 @@ public class si extends javax.swing.JFrame {
         btnIdentificacion_C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/card.png"))); // NOI18N
         btnIdentificacion_C.setText(" Identificacion del ultimo dueño");
         btnIdentificacion_C.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnIdentificacion_C.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnIdentificacion_CMouseClicked(evt);
+            }
+        });
         Agregar_Documentacion1.add(btnIdentificacion_C, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 330, 60));
 
         JConsulta_Documentacion.getContentPane().add(Agregar_Documentacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 560));
@@ -896,6 +956,72 @@ public class si extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TablaClientesMouseClicked
 
+    private void btnContratoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnContratoMouseClicked
+        new saveImage().selectImage("Contrato",1); //FALTA IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL COCHE 
+    }//GEN-LAST:event_btnContratoMouseClicked
+
+    private void btnFacturaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFacturaMouseClicked
+        new saveImage().selectImage("Factura",1); //FALTA IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL COCHE 
+    }//GEN-LAST:event_btnFacturaMouseClicked
+
+    private void btnTenenciaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTenenciaMouseClicked
+        new saveImage().selectImage("Tenencia",1); //FALTA IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL COCHE 
+    }//GEN-LAST:event_btnTenenciaMouseClicked
+
+    private void btnTarjetaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTarjetaMouseClicked
+        new saveImage().selectImage("Tarjeta",1); //FALTA IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL COCHE 
+    }//GEN-LAST:event_btnTarjetaMouseClicked
+
+    private void btnIDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIDMouseClicked
+        new saveImage().selectImage("IDDueno",1); //FALTA IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL COCHE 
+    }//GEN-LAST:event_btnIDMouseClicked
+
+    private void btnMantenimientoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMantenimientoMouseClicked
+        new saveImage().selectImage("Mantenimiento",1); //FALTA IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL COCHE 
+    }//GEN-LAST:event_btnMantenimientoMouseClicked
+
+    private void btnFactura_CMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFactura_CMouseClicked
+        try {
+            new openImage().buscar("Factura", 1); //Falta IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL ID COCHE
+        } catch (Exception e) {
+        }
+        
+    }//GEN-LAST:event_btnFactura_CMouseClicked
+
+    private void btnTenencia_CMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTenencia_CMouseClicked
+        try {
+            new openImage().buscar("Tenencia", 1); //Falta IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL ID COCHE
+        } catch (Exception e) {
+        }    }//GEN-LAST:event_btnTenencia_CMouseClicked
+
+    private void btnCirculacion_CMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCirculacion_CMouseClicked
+        try {
+            new openImage().buscar("Tarjeta", 1); //Falta IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL ID COCHE
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_btnCirculacion_CMouseClicked
+
+    private void btnContrato_CMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnContrato_CMouseClicked
+        try {
+            new openImage().buscar("Contrato", 1); //Falta IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL ID COCHE
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_btnContrato_CMouseClicked
+
+    private void btnIdentificacion_CMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIdentificacion_CMouseClicked
+        try {
+            new openImage().buscar("IDDueno", 1); //Falta IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL ID COCHE
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_btnIdentificacion_CMouseClicked
+
+    private void btnRegistro_CMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistro_CMouseClicked
+        try {
+            new openImage().buscar("Factura", 1); //Falta IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL ID COCHE
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_btnRegistro_CMouseClicked
+    
     /**
      * @param args the command line arguments
      */
