@@ -805,6 +805,11 @@ public class si extends javax.swing.JFrame {
         btnDocumentacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/checklist.png"))); // NOI18N
         btnDocumentacion.setText("  Agregar Documentacion");
         btnDocumentacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDocumentacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDocumentacionMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnDocumentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 640, 270, 60));
 
         btnEditar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -1021,6 +1026,10 @@ public class si extends javax.swing.JFrame {
         } catch (Exception e) {
         }
     }//GEN-LAST:event_btnRegistro_CMouseClicked
+
+    private void btnDocumentacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDocumentacionMouseClicked
+        JAgragar_Documentacion.show();
+    }//GEN-LAST:event_btnDocumentacionMouseClicked
     
     /**
      * @param args the command line arguments
