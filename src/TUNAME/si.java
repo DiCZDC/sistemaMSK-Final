@@ -62,6 +62,21 @@ public class si extends javax.swing.JFrame {
         jLabel61 = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
         TablaClientes = new javax.swing.JTable();
+        btnAgregarCliente = new javax.swing.JLabel();
+        lblNombreA2 = new javax.swing.JLabel();
+        lblNombreA3 = new javax.swing.JLabel();
+        lblNombreA5 = new javax.swing.JLabel();
+        lblPromedio = new javax.swing.JLabel();
+        lblCLN = new javax.swing.JLabel();
+        lblIngresos = new javax.swing.JLabel();
+        lblNombreA4 = new javax.swing.JLabel();
+        lblNombreA6 = new javax.swing.JLabel();
+        lblNombreA = new javax.swing.JLabel();
+        lblNombreA7 = new javax.swing.JLabel();
+        lblPromedio1 = new javax.swing.JLabel();
+        lblNombreA8 = new javax.swing.JLabel();
+        btnVentaA = new javax.swing.JLabel();
+        btnCancelarV = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         PanelSaludo = new javax.swing.JPanel();
         lblTextoMorado = new javax.swing.JLabel();
@@ -329,18 +344,18 @@ public class si extends javax.swing.JFrame {
         lblTextoMorado3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTextoMorado3.setForeground(new java.awt.Color(255, 255, 255));
         lblTextoMorado3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTextoMorado3.setText("Ventana de Ventas");
+        lblTextoMorado3.setText("Ventas");
         lblTextoMorado3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        PanelSaludo3.add(lblTextoMorado3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1100, 40));
+        PanelSaludo3.add(lblTextoMorado3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1170, 40));
 
         jLabel61.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel61.setForeground(new java.awt.Color(255, 255, 255));
         jLabel61.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel61.setText("MSK SEMINUEVOS");
         jLabel61.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        PanelSaludo3.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1100, 40));
+        PanelSaludo3.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1170, 40));
 
-        jPanel3.add(PanelSaludo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 100));
+        jPanel3.add(PanelSaludo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1170, 100));
 
         jScrollPane5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jScrollPane5.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -358,7 +373,7 @@ public class si extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Id", "Modelo", "Variante", "Año", "Precio", "Kilometraje"
+                "Id", "Nombre(s)", "Apellido Paterno", "Apellido Materno", "Gmail", "Telefono"
             }
         ) {
             Class[] types = new Class [] {
@@ -378,21 +393,115 @@ public class si extends javax.swing.JFrame {
         });
         jScrollPane5.setViewportView(TablaClientes);
 
-        jPanel3.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 870, 240));
+        jPanel3.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 1010, 180));
+
+        btnAgregarCliente.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnAgregarCliente.setForeground(new java.awt.Color(25, 25, 25));
+        btnAgregarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/customer-engagement.png"))); // NOI18N
+        btnAgregarCliente.setText(" Agregar Cliente");
+        btnAgregarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel3.add(btnAgregarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 400, 180, 60));
+
+        lblNombreA2.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        lblNombreA2.setForeground(new java.awt.Color(25, 25, 25));
+        lblNombreA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/price-tag.png"))); // NOI18N
+        lblNombreA2.setText(" Precio de Compra");
+        jPanel3.add(lblNombreA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 250, -1));
+
+        lblNombreA3.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        lblNombreA3.setForeground(new java.awt.Color(25, 25, 25));
+        lblNombreA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/pricing.png"))); // NOI18N
+        lblNombreA3.setText(" Precio de Venta");
+        jPanel3.add(lblNombreA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 380, 250, -1));
+
+        lblNombreA5.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        lblNombreA5.setForeground(new java.awt.Color(25, 25, 25));
+        lblNombreA5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/calendar.png"))); // NOI18N
+        lblNombreA5.setText(" Años transcurridos");
+        jPanel3.add(lblNombreA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, 240, -1));
+
+        lblPromedio.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblPromedio.setForeground(new java.awt.Color(54, 33, 89));
+        lblPromedio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPromedio.setText("jLabel2");
+        jPanel3.add(lblPromedio, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 430, 100, -1));
+
+        lblCLN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblCLN.setForeground(new java.awt.Color(54, 33, 89));
+        lblCLN.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCLN.setText("jLabel2");
+        jPanel3.add(lblCLN, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, 100, -1));
+
+        lblIngresos.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblIngresos.setForeground(new java.awt.Color(54, 33, 89));
+        lblIngresos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblIngresos.setText("jLabel2");
+        jPanel3.add(lblIngresos, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 380, 100, -1));
+
+        lblNombreA4.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        lblNombreA4.setForeground(new java.awt.Color(54, 33, 89));
+        lblNombreA4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNombreA4.setText("______________");
+        jPanel3.add(lblNombreA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 380, 120, -1));
+
+        lblNombreA6.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        lblNombreA6.setForeground(new java.awt.Color(54, 33, 89));
+        lblNombreA6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNombreA6.setText("______________");
+        jPanel3.add(lblNombreA6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 430, 120, -1));
+
+        lblNombreA.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        lblNombreA.setForeground(new java.awt.Color(54, 33, 89));
+        lblNombreA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNombreA.setText("______________");
+        jPanel3.add(lblNombreA, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 120, -1));
+
+        lblNombreA7.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        lblNombreA7.setForeground(new java.awt.Color(25, 25, 25));
+        lblNombreA7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/taxes.png"))); // NOI18N
+        lblNombreA7.setText(" Impuestos agregados");
+        jPanel3.add(lblNombreA7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 250, -1));
+
+        lblPromedio1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblPromedio1.setForeground(new java.awt.Color(54, 33, 89));
+        lblPromedio1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPromedio1.setText("jLabel2");
+        jPanel3.add(lblPromedio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, 100, -1));
+
+        lblNombreA8.setFont(new java.awt.Font("Segoe UI", 1, 19)); // NOI18N
+        lblNombreA8.setForeground(new java.awt.Color(54, 33, 89));
+        lblNombreA8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNombreA8.setText("______________");
+        jPanel3.add(lblNombreA8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 480, 120, -1));
+
+        btnVentaA.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnVentaA.setForeground(new java.awt.Color(25, 25, 25));
+        btnVentaA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/new-car.png"))); // NOI18N
+        btnVentaA.setText(" Vender");
+        btnVentaA.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVentaA.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnVentaAMouseClicked(evt);
+            }
+        });
+        jPanel3.add(btnVentaA, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 400, 110, 60));
+
+        btnCancelarV.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnCancelarV.setForeground(new java.awt.Color(25, 25, 25));
+        btnCancelarV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/paper.png"))); // NOI18N
+        btnCancelarV.setText("Cancelar");
+        btnCancelarV.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel3.add(btnCancelarV, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 120, 60));
 
         javax.swing.GroupLayout JVentasLayout = new javax.swing.GroupLayout(JVentas.getContentPane());
         JVentas.getContentPane().setLayout(JVentasLayout);
         JVentasLayout.setHorizontalGroup(
             JVentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(JVentasLayout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1169, Short.MAX_VALUE)
         );
         JVentasLayout.setVerticalGroup(
             JVentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(JVentasLayout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -983,10 +1092,6 @@ public class si extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cboDescuentoActionPerformed
 
-    private void TablaClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaClientesMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TablaClientesMouseClicked
-
     private void btnContratoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnContratoMouseClicked
         new saveImage().selectImage("Contrato",1); //FALTA IMPLEMENTAR LA FUNCION PARA CONSEGUIR EL COCHE 
     }//GEN-LAST:event_btnContratoMouseClicked
@@ -1064,6 +1169,14 @@ public class si extends javax.swing.JFrame {
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         System.exit(0);
     }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void TablaClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaClientesMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TablaClientesMouseClicked
+
+    private void btnVentaAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVentaAMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVentaAMouseClicked
     
     /**
      * @param args the command line arguments
@@ -1117,6 +1230,8 @@ public class si extends javax.swing.JFrame {
     public javax.swing.JTable TablaClientes;
     public javax.swing.JTable TablaVehiculos;
     private javax.swing.JLabel btnAgregar;
+    private javax.swing.JLabel btnAgregarCliente;
+    private javax.swing.JLabel btnCancelarV;
     private javax.swing.JLabel btnCirculacion_C;
     private javax.swing.JLabel btnContrato;
     private javax.swing.JLabel btnContrato_C;
@@ -1133,6 +1248,7 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JLabel btnTenencia;
     private javax.swing.JLabel btnTenencia_C;
     private javax.swing.JLabel btnVenta;
+    private javax.swing.JLabel btnVentaA;
     private javax.swing.JComboBox<String> cboDescuento;
     private javax.swing.JComboBox<String> cboGasolina;
     private javax.swing.JLabel jLabel1;
@@ -1159,6 +1275,18 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JLabel lblCLN;
+    private javax.swing.JLabel lblIngresos;
+    private javax.swing.JLabel lblNombreA;
+    private javax.swing.JLabel lblNombreA2;
+    private javax.swing.JLabel lblNombreA3;
+    private javax.swing.JLabel lblNombreA4;
+    private javax.swing.JLabel lblNombreA5;
+    private javax.swing.JLabel lblNombreA6;
+    private javax.swing.JLabel lblNombreA7;
+    private javax.swing.JLabel lblNombreA8;
+    private javax.swing.JLabel lblPromedio;
+    private javax.swing.JLabel lblPromedio1;
     private javax.swing.JLabel lblTextoMorado;
     private javax.swing.JLabel lblTextoMorado1;
     private javax.swing.JLabel lblTextoMorado2;
