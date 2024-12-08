@@ -34,6 +34,7 @@ public class si extends javax.swing.JFrame {
         JAgragar_Documentacion = new javax.swing.JDialog();
         Agregar_Documentacion = new javax.swing.JPanel();
         PanelSaludo1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         lblTextoMorado1 = new javax.swing.JLabel();
         jLabel59 = new javax.swing.JLabel();
         btnContrato = new javax.swing.JLabel();
@@ -47,6 +48,7 @@ public class si extends javax.swing.JFrame {
         PanelSaludo2 = new javax.swing.JPanel();
         lblTextoMorado2 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         btnContrato_C = new javax.swing.JLabel();
         btnFactura_C = new javax.swing.JLabel();
         btnTenencia_C = new javax.swing.JLabel();
@@ -105,6 +107,18 @@ public class si extends javax.swing.JFrame {
 
         PanelSaludo1.setBackground(new java.awt.Color(75, 75, 75));
         PanelSaludo1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("X");
+        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+        PanelSaludo1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 0, 40, 29));
 
         lblTextoMorado1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTextoMorado1.setForeground(new java.awt.Color(255, 255, 255));
@@ -216,7 +230,19 @@ public class si extends javax.swing.JFrame {
         jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel60.setText("MSK SEMINUEVOS");
         jLabel60.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        PanelSaludo2.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 440, 40));
+        PanelSaludo2.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 340, 50));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("X");
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+        PanelSaludo2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 40, 40));
 
         Agregar_Documentacion1.add(PanelSaludo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 100));
 
@@ -805,6 +831,11 @@ public class si extends javax.swing.JFrame {
         btnDocumentacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/checklist.png"))); // NOI18N
         btnDocumentacion.setText("  Agregar Documentacion");
         btnDocumentacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDocumentacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDocumentacionMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnDocumentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 640, 270, 60));
 
         btnEditar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -1021,6 +1052,18 @@ public class si extends javax.swing.JFrame {
         } catch (Exception e) {
         }
     }//GEN-LAST:event_btnRegistro_CMouseClicked
+
+    private void btnDocumentacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDocumentacionMouseClicked
+        
+    }//GEN-LAST:event_btnDocumentacionMouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_jLabel4MouseClicked
     
     /**
      * @param args the command line arguments
@@ -1101,8 +1144,10 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
