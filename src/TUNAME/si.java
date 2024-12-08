@@ -786,7 +786,7 @@ public class si extends javax.swing.JFrame {
         btnEditarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/edit.png"))); // NOI18N
         btnEditarCliente.setText(" Editar Cliente");
         btnEditarCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel4.add(btnEditarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 430, 170, 60));
+        jPanel4.add(btnEditarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 430, 170, 60));
 
         JRegistroCliente.getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 1250, 560));
 
